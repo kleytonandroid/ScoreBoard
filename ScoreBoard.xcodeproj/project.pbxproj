@@ -11,9 +11,11 @@
 		429485252A7982A300F8AA47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429485242A7982A300F8AA47 /* ContentView.swift */; };
 		429485272A7982A600F8AA47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429485262A7982A600F8AA47 /* Assets.xcassets */; };
 		4294852A2A7982A600F8AA47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429485292A7982A600F8AA47 /* Preview Assets.xcassets */; };
-		429485342A7982A600F8AA47 /* ScoreBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429485332A7982A600F8AA47 /* ScoreBoardTests.swift */; };
+		429485342A7982A600F8AA47 /* TeamManagerServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429485332A7982A600F8AA47 /* TeamManagerServiceTest.swift */; };
 		4294853E2A7982A600F8AA47 /* ScoreBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4294853D2A7982A600F8AA47 /* ScoreBoardUITests.swift */; };
 		429485402A7982A600F8AA47 /* ScoreBoardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4294853F2A7982A600F8AA47 /* ScoreBoardUITestsLaunchTests.swift */; };
+		4294854E2A79885800F8AA47 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4294854D2A79885800F8AA47 /* Team.swift */; };
+		4295922A2A79B58C00220BE2 /* TeamManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429592292A79B58C00220BE2 /* TeamManagerService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +42,12 @@
 		429485262A7982A600F8AA47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		429485292A7982A600F8AA47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4294852F2A7982A600F8AA47 /* ScoreBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		429485332A7982A600F8AA47 /* ScoreBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardTests.swift; sourceTree = "<group>"; };
+		429485332A7982A600F8AA47 /* TeamManagerServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamManagerServiceTest.swift; sourceTree = "<group>"; };
 		429485392A7982A600F8AA47 /* ScoreBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4294853D2A7982A600F8AA47 /* ScoreBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardUITests.swift; sourceTree = "<group>"; };
 		4294853F2A7982A600F8AA47 /* ScoreBoardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4294854D2A79885800F8AA47 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		429592292A79B58C00220BE2 /* TeamManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamManagerService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,9 @@
 		429485212A7982A300F8AA47 /* ScoreBoard */ = {
 			isa = PBXGroup;
 			children = (
+				429592282A79B55200220BE2 /* Services */,
+				4294854F2A79896B00F8AA47 /* ViewModel */,
+				4294854C2A79883B00F8AA47 /* Model */,
 				429485222A7982A300F8AA47 /* ScoreBoardApp.swift */,
 				429485242A7982A300F8AA47 /* ContentView.swift */,
 				429485262A7982A600F8AA47 /* Assets.xcassets */,
@@ -113,7 +120,8 @@
 		429485322A7982A600F8AA47 /* ScoreBoardTests */ = {
 			isa = PBXGroup;
 			children = (
-				429485332A7982A600F8AA47 /* ScoreBoardTests.swift */,
+				429592272A79B4ED00220BE2 /* TestPlan */,
+				429485332A7982A600F8AA47 /* TeamManagerServiceTest.swift */,
 			);
 			path = ScoreBoardTests;
 			sourceTree = "<group>";
@@ -127,6 +135,36 @@
 			path = ScoreBoardUITests;
 			sourceTree = "<group>";
 		};
+		4294854C2A79883B00F8AA47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4294854D2A79885800F8AA47 /* Team.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4294854F2A79896B00F8AA47 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		429592272A79B4ED00220BE2 /* TestPlan */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TestPlan;
+			sourceTree = "<group>";
+		};
+		429592282A79B55200220BE2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				429592292A79B58C00220BE2 /* TeamManagerService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +175,7 @@
 				4294851B2A7982A300F8AA47 /* Sources */,
 				4294851C2A7982A300F8AA47 /* Frameworks */,
 				4294851D2A7982A300F8AA47 /* Resources */,
+				42ECD4CF2A7AE37E008E5E83 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -252,12 +291,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42ECD4CF2A7AE37E008E5E83 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4294851B2A7982A300F8AA47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4294854E2A79885800F8AA47 /* Team.swift in Sources */,
 				429485252A7982A300F8AA47 /* ContentView.swift in Sources */,
+				4295922A2A79B58C00220BE2 /* TeamManagerService.swift in Sources */,
 				429485232A7982A300F8AA47 /* ScoreBoardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				429485342A7982A600F8AA47 /* ScoreBoardTests.swift in Sources */,
+				429485342A7982A600F8AA47 /* TeamManagerServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +543,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoreBoard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScoreBoard";
 			};
 			name = Debug;
@@ -502,7 +563,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoreBoard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScoreBoard";
 			};
 			name = Release;
