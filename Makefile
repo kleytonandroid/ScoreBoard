@@ -4,7 +4,7 @@ test:
 	@echo "------------------------------------------"
 	@xcodebuild test -project ScoreBoard.xcodeproj -scheme ScoreBoardTests -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=16.4'
 	@echo "------------------------------------------"
-	@echo "|---------Unit tests run finished---------|"
+	@echo "|-------- Unit tests run finished---------|"
 	@echo "------------------------------------------"
 
 autocorrectfiles:
